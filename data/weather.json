@@ -1,50 +1,47 @@
 {
   "coord": {
-    "lon": -1.7812,
-    "lat": 51.558
+    "lon": -0.1257,
+    "lat": 51.5085
   },
   "weather": [
     {
-      "id": 501,
-      "main": "Rain",
-      "description": "moderate rain",
-      "icon": "10d"
+      "id": 803,
+      "main": "Clouds",
+      "description": "broken clouds",
+      "icon": "04d"
     }
   ],
   "base": "stations",
   "main": {
-    "temp": 14.17,
-    "feels_like": 13.81,
-    "temp_min": 12.49,
-    "temp_max": 14.31,
-    "pressure": 1000,
-    "humidity": 83,
-    "sea_level": 1000,
-    "grnd_level": 983
+    "temp": 13.97,
+    "feels_like": 13.56,
+    "temp_min": 12.95,
+    "temp_max": 14.49,
+    "pressure": 1002,
+    "humidity": 82,
+    "sea_level": 1002,
+    "grnd_level": 998
   },
   "visibility": 10000,
   "wind": {
-    "speed": 8.23,
-    "deg": 200,
-    "gust": 12.86
-  },
-  "rain": {
-    "1h": 2.61
+    "speed": 6.69,
+    "deg": 180,
+    "gust": 11.83
   },
   "clouds": {
-    "all": 100
+    "all": 75
   },
-  "dt": 1765277036,
+  "dt": 1765281590,
   "sys": {
     "type": 2,
-    "id": 266740,
+    "id": 2075535,
     "country": "GB",
-    "sunrise": 1765267261,
-    "sunset": 1765295897
+    "sunrise": 1765266848,
+    "sunset": 1765295514
   },
   "timezone": 0,
-  "id": 2636389,
-  "name": "Swindon",
+  "id": 2643743,
+  "name": "London",
   "cod": 200,
-  "_last_updated_utc": "2025-12-09T10:47:11.248Z"
+  "_last_updated_utc": "2025-12-09T12:08:07.349Z"
 }
