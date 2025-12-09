@@ -1,0 +1,49 @@
+name: Weather Pipeline CI/CD
+
+on:
+  push: # Happens automatically every push
+  schedule:
+    - cron: "0 */2 * * *"
+  workflow_dispatch: # Can also be triggered manually
+
+permissions:
+  contents: write # Able to write to files
+
+jobs:
+  test_and_fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4 # Make a copy of repo inside virtual machine
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22" # Setup node.js in the virtual machine to run scripts
+
+      - name: Cache Node Modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm # Tells the action what to cache
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }} # Create a unique key for cache
+          # Updates the package-lock with the specific versions, but only once unless they are updated
+
+      - name: Install Dependencies
+        run: npm ci # Install node.js dependencies from package-lock
+
+      - name: Fetch Latest Weather
+        env:
+          WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
+          WEATHER_CITY: ${{ secrets.CITY }}
+        run: node fetchWeather.js # Runs fetch weather function using variables from .env
+
+      - name: Commit Weather Data if Changed # Automatically adds, commits, and pushes data to GitHub
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/weather.json data/weather_log.csv || true
+          git commit -m "ci: update weather data" || echo "No changes to commit"
+          git push || echo "Push failed or no changes"
+
+      - name: Trigger Render Deploy
+        run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK}} # Every time data is pushed , updates deployment
