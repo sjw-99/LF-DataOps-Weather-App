@@ -5,42 +5,43 @@
   },
   "weather": [
     {
-      "id": 800,
-      "main": "Clear",
-      "description": "clear sky",
-      "icon": "01n"
+      "id": 801,
+      "main": "Clouds",
+      "description": "few clouds",
+      "icon": "02n"
     }
   ],
   "base": "stations",
   "main": {
-    "temp": 4.62,
-    "feels_like": 3.46,
-    "temp_min": 3.79,
-    "temp_max": 5.1,
-    "pressure": 1023,
-    "humidity": 95,
-    "sea_level": 1023,
+    "temp": 5.39,
+    "feels_like": 3.23,
+    "temp_min": 3.6,
+    "temp_max": 5.43,
+    "pressure": 1025,
+    "humidity": 92,
+    "sea_level": 1025,
     "grnd_level": 1008
   },
   "visibility": 10000,
   "wind": {
-    "speed": 1.54,
-    "deg": 280
+    "speed": 2.66,
+    "deg": 231,
+    "gust": 2.97
   },
   "clouds": {
-    "all": 0
+    "all": 15
   },
-  "dt": 1765577376,
+  "dt": 1765586608,
   "sys": {
     "type": 2,
-    "id": 2073344,
+    "id": 266740,
     "country": "GB",
-    "sunrise": 1765526646,
-    "sunset": 1765555072
+    "sunrise": 1765613102,
+    "sunset": 1765641471
   },
   "timezone": 0,
   "id": 2636389,
   "name": "Swindon",
   "cod": 200,
-  "_last_updated_utc": "2025-12-12T22:09:36.838Z"
+  "_last_updated_utc": "2025-12-13T00:43:28.839Z"
 }
