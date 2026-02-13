@@ -8,13 +8,13 @@
       "id": 300,
       "main": "Drizzle",
       "description": "light intensity drizzle",
-      "icon": "09n"
+      "icon": "09d"
     }
   ],
   "base": "stations",
   "main": {
     "temp": 4.72,
-    "feels_like": 3.58,
+    "feels_like": 2.98,
     "temp_min": 3.8,
     "temp_max": 4.79,
     "pressure": 989,
@@ -24,13 +24,13 @@
   },
   "visibility": 10000,
   "wind": {
-    "speed": 1.54,
-    "deg": 50
+    "speed": 2.06,
+    "deg": 70
   },
   "clouds": {
     "all": 100
   },
-  "dt": 1770965008,
+  "dt": 1770971070,
   "sys": {
     "type": 1,
     "id": 1495,
@@ -42,5 +42,5 @@
   "id": 2636389,
   "name": "Swindon",
   "cod": 200,
-  "_last_updated_utc": "2026-02-13T06:43:28.494Z"
+  "_last_updated_utc": "2026-02-13T08:28:37.602Z"
 }
