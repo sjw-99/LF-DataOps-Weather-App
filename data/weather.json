@@ -24,14 +24,14 @@
   },
   "visibility": 10000,
   "wind": {
-    "speed": 8.62,
-    "deg": 74,
-    "gust": 8.98
+    "speed": 9.4,
+    "deg": 72,
+    "gust": 10.17
   },
   "clouds": {
     "all": 7
   },
-  "dt": 1783867476,
+  "dt": 1783874456,
   "sys": {
     "type": 2,
     "id": 2003225,
@@ -43,5 +43,5 @@
   "id": 2636389,
   "name": "Swindon",
   "cod": 200,
-  "_last_updated_utc": "2026-07-12T14:44:36.465Z"
+  "_last_updated_utc": "2026-07-12T16:40:56.375Z"
 }
