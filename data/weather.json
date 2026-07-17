@@ -29,19 +29,19 @@
     "gust": 4.02
   },
   "clouds": {
-    "all": 9
+    "all": 5
   },
-  "dt": 1784241836,
+  "dt": 1784251165,
   "sys": {
     "type": 2,
     "id": 266740,
     "country": "GB",
-    "sunrise": 1784174888,
-    "sunset": 1784233067
+    "sunrise": 1784261362,
+    "sunset": 1784319404
   },
   "timezone": 3600,
   "id": 2636389,
   "name": "Swindon",
   "cod": 200,
-  "_last_updated_utc": "2026-07-16T22:43:56.840Z"
+  "_last_updated_utc": "2026-07-17T01:19:25.634Z"
 }
