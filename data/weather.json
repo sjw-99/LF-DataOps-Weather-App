@@ -20,7 +20,7 @@
     "pressure": 1020,
     "humidity": 100,
     "sea_level": 1020,
-    "grnd_level": 1003
+    "grnd_level": 1004
   },
   "visibility": 10000,
   "wind": {
@@ -31,7 +31,7 @@
   "clouds": {
     "all": 72
   },
-  "dt": 1785185861,
+  "dt": 1785192363,
   "sys": {
     "type": 2,
     "id": 266740,
@@ -43,5 +43,5 @@
   "id": 2636389,
   "name": "Swindon",
   "cod": 200,
-  "_last_updated_utc": "2026-07-27T20:57:41.092Z"
+  "_last_updated_utc": "2026-07-27T22:46:03.868Z"
 }
